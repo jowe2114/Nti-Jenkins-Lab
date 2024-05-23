@@ -1,10 +1,10 @@
-@Library('Jenkins-Shared-Library')_
+@Library('Jowe-Shared-Library')_
 pipeline {
     agent any
     
     environment {
         dockerHubCredentialsID	            = 'DockerHub'  		    			      // DockerHub credentials ID.
-        imageName   		            = 'alikhames/nti-python-app'     			// DockerHub repo/image name.
+        imageName   		            = 'jowe2114/nti-python-app'     			// DockerHub repo/image name.
 	    k8sCredentialsID	            = 'kubernetes'	    				     // KubeConfig credentials ID.    
     }
     
